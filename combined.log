@@ -1,0 +1,15 @@
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-01 16:19:45'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-01 16:21:29'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-01 16:24:10'
+}

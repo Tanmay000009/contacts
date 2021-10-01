@@ -12,6 +12,7 @@ const databaseConfigurations = {
  */
 const initializeMongoDB = () => {
   mongoose.connect(
+    
     config.get('mongoURI'),
     databaseConfigurations,
     (err) => {

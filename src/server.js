@@ -4,6 +4,7 @@ const express = require('express');
 const { HttpExceptionTransformer } = require('http-exception-transformer');
 
 /** load services */
+const { initializeMongoDB } = require('./services/database');
 
 /** load modules as routes */
 const UserRoutes = require('./modules/user/user.routes');
@@ -13,13 +14,19 @@ const ContactRoutes = require('./modules/contact/contact.routes');
 /** declare application and load middleware */
 const app = express();
 
+/** to recognize the incoming Request Object as a JSON Object */
+app.use(express.json());
+
+/** initialize services */
+initializeMongoDB();
+
 app.get('/',(req,res) => {
     res.json({ alive: true });
 })
 
-app.use('/api/users',require(UserRoutes));
-app.use('/api/contacts',require(ContactRoutes));
-app.use('/api/auth',require(AuthRoutes));
+app.use('/api/users',UserRoutes);
+app.use('/api/contacts',ContactRoutes);
+app.use('/api/auth',AuthRoutes);
 
 /** transform all errors into standard messages */
 app.use(HttpExceptionTransformer);
