@@ -1,3 +1,8 @@
+/** load required packages */
+const {
+  InternalServerException,
+} = require('http-exception-transformer/exceptions');
+
 const express = require('express');
 
 const router = express.Router();
@@ -19,8 +24,12 @@ router.get('/:id', async (req, res) => {
 
 /** to register a user */
 router.post('/', async (req, res) => {
-  const user = await UserController.register(req.body);
-  return res.json(user);
+  try {
+    const user = await UserController.register(req.body);
+    return res.json(user);
+  } catch (e) {
+        throw new InternalServerException();
+      }
 });
 
 /** to update a user */

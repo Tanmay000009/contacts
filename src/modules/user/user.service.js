@@ -33,8 +33,9 @@ class UserService {
    */
   static async registerUser(body) {
     const user = new User({
-      user_identifier: body.uid,
-      subscriptions: [],
+      name: body.name,
+      email: body.email,
+      password: body.password
     });
     const newUser = await user.save();
     return newUser;
@@ -46,7 +47,7 @@ class UserService {
    */
   static async updateUser(userId, objId) {
     const user = await User.findById({ id: userId });
-    user.subscriptions.push(objId);
+    user.push(objId);
     const updatedUser = await user.save();
     return updatedUser;
   }
