@@ -24,6 +24,7 @@
     "config": "^3.3.6",
     "express": "^4.17.1",
     "express-validator": "^6.12.2",
+    "http-exception-transformer": "^1.2.3",
     "jsonwebtoken": "^8.5.1",
     "moongoose": "0.0.5"
   },

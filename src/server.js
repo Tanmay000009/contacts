@@ -1,5 +1,7 @@
 const express = require('express');
+
 /** load middlewares */
+const { HttpExceptionTransformer } = require('http-exception-transformer');
 
 /** load services */
 
@@ -19,6 +21,8 @@ app.use('/api/users',require(UserRoutes));
 app.use('/api/contacts',require(ContactRoutes));
 app.use('/api/auth',require(AuthRoutes));
 
+/** transform all errors into standard messages */
+app.use(HttpExceptionTransformer);
 
 const PORT = process.env.PORT || 5000;
 
