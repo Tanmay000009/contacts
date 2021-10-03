@@ -13,7 +13,7 @@ const {
   
   /** load peer modules and services */
   const { logger } = require('../services/logger');
-  const { UserService } = require('../services/user.service');
+  const { UserService } = require('../modules/user/user.service');
   
   /**
    * UserController contains definitions of all route handlers in /user namespace.

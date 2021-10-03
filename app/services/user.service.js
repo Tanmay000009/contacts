@@ -14,7 +14,7 @@
 const bcrypt = require('bcryptjs');
 
 /** load peer modules and services */
-const User = require('../models/user.schema');
+const User = require('../../models/user.schema');
 
 /**
  * UserService is consumed not only by UserController, but also by controllers of other modules.
