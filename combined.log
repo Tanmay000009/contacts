@@ -98,3 +98,63 @@
   level: '\x1B[32minfo\x1B[39m',
   timestamp: '2021-10-01 18:13:15'
 }
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-01 18:13:37'
+}
+{
+  message: '[user]: registering the user',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-01 18:13:48'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-01 18:30:10'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-01 18:31:55'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-01 18:31:58'
+}
+{
+  message: '[user]: registering the user',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-01 18:32:09'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-01 18:34:33'
+}
+{
+  message: '[user]: registering the user',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-01 18:34:36'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-01 18:36:03'
+}
+{
+  message: '[user]: registering the user',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-01 18:36:05'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-01 18:41:34'
+}
+{
+  message: '[user]: registering the user',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-01 18:41:37'
+}
