@@ -158,3 +158,34 @@
   level: '\x1B[32minfo\x1B[39m',
   timestamp: '2021-10-01 18:41:37'
 }
+{
+  level: '\x1B[31merror\x1B[39m',
+  message: 'Invalid connection string ""',
+  stack: 'MongoParseError: Invalid connection string ""\n' +
+    '    at new ConnectionString (D:\\node+react\\contacts\\node_modules\\mongodb-connection-string-url\\lib\\index.js:66:19)\n' +
+    '    at Object.parseOptions (D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\connection_string.js:211:17)\n' +
+    '    at new MongoClient (D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\mongo_client.js:62:46)\n' +
+    '    at D:\\node+react\\contacts\\node_modules\\mongoose\\lib\\connection.js:779:16\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at NativeConnection.Connection.openUri (D:\\node+react\\contacts\\node_modules\\mongoose\\lib\\connection.js:776:19)\n' +
+    '    at D:\\node+react\\contacts\\node_modules\\mongoose\\lib\\index.js:328:10\n' +
+    '    at promiseOrCallback (D:\\node+react\\contacts\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:10:12)\n' +
+    '    at Mongoose._promiseOrCallback (D:\\node+react\\contacts\\node_modules\\mongoose\\lib\\index.js:1149:10)\n' +
+    '    at Mongoose.connect (D:\\node+react\\contacts\\node_modules\\mongoose\\lib\\index.js:327:20)',
+  timestamp: '2021-10-03 18:59:26'
+}
+{
+  message: 'connection.mongodb.failed',
+  level: '\x1B[31merror\x1B[39m',
+  timestamp: '2021-10-03 18:59:26'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-03 19:00:19'
+}
+{
+  message: '[user]: registering the user',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-03 19:00:22'
+}

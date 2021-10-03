@@ -1,14 +1,10 @@
-/** load required packages */
-const {
-  InternalServerException,
-} = require('http-exception-transformer/exceptions');
-
 const express = require('express');
 
 const router = express.Router();
 
 /** load the service */
 const { UserController } = require('../app/controllers/user.controller');
+const { userValidationRules, validate } = require('../app/validators/user.validator');
 
 /** to list all users */
 router.get('/', async (req, res) => {
@@ -23,12 +19,12 @@ router.get('/:id', async (req, res) => {
 });
 
 /** to register a user */
-router.post('/', async (req, res) => {
+router.post('/', userValidationRules(), validate, async (req, res) => {
   try {
     const user = await UserController.register(req.body);
     return res.json(user);
   } catch (e) {
-        throw new InternalServerException();
+       res.status(400).json({errors: e});
       }
 });
 

@@ -13,7 +13,7 @@ const {
   
   /** load peer modules and services */
   const { logger } = require('../services/logger');
-  const { UserService } = require('../modules/user/user.service');
+  const { UserService } = require('../services/user.service');
   
   /**
    * UserController contains definitions of all route handlers in /user namespace.
@@ -29,7 +29,7 @@ const {
   
         return userList;
       } catch (e) {
-        throw new InternalServerException();
+        throw new Error();
       }
     }
   
@@ -51,7 +51,7 @@ const {
   
         return user;
       } catch (e) {
-        throw new InternalServerException();
+        throw new Error(e);
       }
     }
   
