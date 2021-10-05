@@ -30,8 +30,8 @@ const {
   
         return userList;
       } catch (e) {
+        logger.error('Error: '+ e)
         return json({
-          status: 400,
           error: e
         })
       }
@@ -44,8 +44,8 @@ const {
   
         return user;
       } catch (e) {
+        logger.error('Error: '+ e)
         return json({
-          status: 400,
           error: e
         })
       }
@@ -57,8 +57,8 @@ const {
         const user = await UserService.registerUser(body);
         return user;
       } catch (e) {
+        logger.error('Error: '+ e)
         return json({
-          status: 400,
           error: e
         })
       }
@@ -69,8 +69,8 @@ const {
       await UserService.updateUser(id, objectid)
       .then(user => {return user;})
       .catch(e => {
+        logger.error('Error: '+ e)
         return json({
-          status: 400,
           error: e
         })});
     }
@@ -80,8 +80,8 @@ const {
         logger.info('[user]: deleting the user');
         return await UserService.deleteUser(id);
       } catch (e) {
+        logger.error('Error: '+ e)
         return json({
-          status: 400,
           error: e
         })
       }
