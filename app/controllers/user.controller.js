@@ -6,56 +6,54 @@ const { logger } = require("../services/logger");
 const { UserService } = require("../services/user.service");
 const apiResponse = require("../helpers/apiResponse");
 
-module.exports.getAllUsers = async () => {
+module.exports.getAllUsers = async (req,res) => {
   try {
     logger.info("[user]: listing all users");
     const userList = await UserService.findAllUsers();
-
-    return userList;
+    return apiResponse.successResponseWithData(res, "Operation success", userList);
   } catch (e) {
     logger.error("Error: " + e);
     apiResponse.ErrorResponse(res, e);
   }
 };
 
-module.exports.getOneUser = async () => {
+module.exports.getOneUser = async (req,res) => {
   try {
     logger.info("[user]: finding the user");
-    const user = await UserService.findUser(id);
-
-    return user;
+    const user = await UserService.findUser(req.params.id);
+    return apiResponse.successResponseWithData(res, "Operation success", user);
   } catch (e) {
     logger.error("Error: " + e);
     apiResponse.ErrorResponse(res, e);
   }
 };
 
-module.exports.register = async () => {
+module.exports.register = async (req,res) => {
   try {
     logger.info("[user]: registering the user");
-    const user = await UserService.registerUser(body);
-    return user;
+    const user = await UserService.registerUser(req.body);
+    return apiResponse.successResponseWithData(res, "Operation success", user);
   } catch (e) {
     logger.error("Error: " + e);
     apiResponse.ErrorResponse(res, e);
   }
 };
 
-module.exports.update = async () => {
+module.exports.update = async (req,res) => {
   try {
     logger.info("[user]: updating the user");
-    const user = await UserService.updateUser(id, objectid);
-    return user;
+    const user = await UserService.updateUser(req.body.id,req.body);
+    return apiResponse.successResponseWithData(res, "Operation success", user);
   } catch (e) {
     logger.error("Error: " + e);
     apiResponse.ErrorResponse(res, e);
   }
 };
 
-module.exports.delete = async () => {
+module.exports.delete = async (req,res) => {
   try {
     logger.info("[user]: deleting the user");
-    return await UserService.deleteUser(id);
+    return apiResponse.successResponse(res,"User delete Success.")
   } catch (e) {
     logger.error("Error: " + e);
     apiResponse.ErrorResponse(res, e);
