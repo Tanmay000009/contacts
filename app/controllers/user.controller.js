@@ -7,6 +7,7 @@
 
 
 /** load required packages */
+const { json } = require('express');
 const {
     InternalServerException,
   } = require('http-exception-transformer/exceptions');
@@ -48,21 +49,20 @@ const {
       try {
         logger.info('[user]: registering the user');
         const user = await UserService.registerUser(body);
-  
         return user;
       } catch (e) {
-        throw new Error(e);
+        return json({
+          status: 400,
+          error: e
+        })
       }
     }
   
-    static async update(id, objectid) {
-      try {
-        logger.info('[user]: updating the user');
-        const user = await UserService.updateUser(id, objectid);
-        return user;
-      } catch (e) {
-        throw new InternalServerException();
-      }
+    static async update() {
+      logger.info('[user]: updating the user');
+      await UserService.updateUser(id, objectid)
+      .then(user => {return user;})
+      .catch(e => {});
     }
   
     static async delete(id) {

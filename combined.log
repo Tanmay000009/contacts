@@ -1,191 +1,135 @@
 {
   message: 'connection.mongodb.successful',
   level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 16:19:45'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 16:21:29'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 16:24:10'
+  timestamp: '2021-10-05 08:15:16'
 }
 {
   message: '[user]: registering the user',
   level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 17:57:13'
+  timestamp: '2021-10-05 08:15:19'
 }
 {
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 17:58:07'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 17:58:40'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 17:59:27'
-}
-{
-  message: '[user]: registering the user',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 17:59:29'
-}
-{
-  message: '[user]: listing all users',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:01:30'
-}
-{
-  message: '[user]: finding the user',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:01:48'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:03:05'
-}
-{
-  message: '[user]: registering the user',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:03:25'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:05:05'
-}
-{
-  message: '[user]: registering the user',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:05:12'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:09:09'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:09:14'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:09:19'
-}
-{
-  message: '[user]: registering the user',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:09:23'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:12:06'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:13:15'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:13:37'
-}
-{
-  message: '[user]: registering the user',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:13:48'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:30:10'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:31:55'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:31:58'
-}
-{
-  message: '[user]: registering the user',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:32:09'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:34:33'
-}
-{
-  message: '[user]: registering the user',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:34:36'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:36:03'
-}
-{
-  message: '[user]: registering the user',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:36:05'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:41:34'
-}
-{
-  message: '[user]: registering the user',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-01 18:41:37'
-}
-{
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'ja@ga.com' },
   level: '\x1B[31merror\x1B[39m',
-  message: 'Invalid connection string ""',
-  stack: 'MongoParseError: Invalid connection string ""\n' +
-    '    at new ConnectionString (D:\\node+react\\contacts\\node_modules\\mongodb-connection-string-url\\lib\\index.js:66:19)\n' +
-    '    at Object.parseOptions (D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\connection_string.js:211:17)\n' +
-    '    at new MongoClient (D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\mongo_client.js:62:46)\n' +
-    '    at D:\\node+react\\contacts\\node_modules\\mongoose\\lib\\connection.js:779:16\n' +
-    '    at new Promise (<anonymous>)\n' +
-    '    at NativeConnection.Connection.openUri (D:\\node+react\\contacts\\node_modules\\mongoose\\lib\\connection.js:776:19)\n' +
-    '    at D:\\node+react\\contacts\\node_modules\\mongoose\\lib\\index.js:328:10\n' +
-    '    at promiseOrCallback (D:\\node+react\\contacts\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:10:12)\n' +
-    '    at Mongoose._promiseOrCallback (D:\\node+react\\contacts\\node_modules\\mongoose\\lib\\index.js:1149:10)\n' +
-    '    at Mongoose.connect (D:\\node+react\\contacts\\node_modules\\mongoose\\lib\\index.js:327:20)',
-  timestamp: '2021-10-03 18:59:26'
-}
-{
-  message: 'connection.mongodb.failed',
-  level: '\x1B[31merror\x1B[39m',
-  timestamp: '2021-10-03 18:59:26'
+  message: 'E11000 duplicate key error collection: myFirstDatabase.users index: email_1 dup key: { email: "ja@ga.com" }',
+  stack: 'MongoServerError: E11000 duplicate key error collection: myFirstDatabase.users index: email_1 dup key: { email: "ja@ga.com" }\n' +
+    '    at D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\insert.js:51:33\n' +
+    '    at D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection_pool.js:272:25\n' +
+    '    at handleOperationResult (D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\sdam\\server.js:363:9)\n' +
+    '    at MessageStream.messageHandler (D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection.js:479:9)\n' +
+    '    at MessageStream.emit (events.js:400:28)\n' +
+    '    at processIncomingData (D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:108:16)\n' +
+    '    at MessageStream._write (D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:28:9)\n' +
+    '    at writeOrBuffer (internal/streams/writable.js:358:12)\n' +
+    '    at MessageStream.Writable.write (internal/streams/writable.js:303:10)\n' +
+    '    at TLSSocket.ondata (internal/streams/readable.js:731:22)',
+  timestamp: '2021-10-05 08:15:19'
 }
 {
   message: 'connection.mongodb.successful',
   level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-03 19:00:19'
+  timestamp: '2021-10-05 08:17:23'
 }
 {
   message: '[user]: registering the user',
   level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-03 19:00:22'
+  timestamp: '2021-10-05 08:17:25'
+}
+{
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'ja@ga.com' },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'E11000 duplicate key error collection: myFirstDatabase.users index: email_1 dup key: { email: "ja@ga.com" }',
+  stack: 'MongoServerError: E11000 duplicate key error collection: myFirstDatabase.users index: email_1 dup key: { email: "ja@ga.com" }\n' +
+    '    at D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\insert.js:51:33\n' +
+    '    at D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection_pool.js:272:25\n' +
+    '    at handleOperationResult (D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\sdam\\server.js:363:9)\n' +
+    '    at MessageStream.messageHandler (D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection.js:479:9)\n' +
+    '    at MessageStream.emit (events.js:400:28)\n' +
+    '    at processIncomingData (D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:108:16)\n' +
+    '    at MessageStream._write (D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:28:9)\n' +
+    '    at writeOrBuffer (internal/streams/writable.js:358:12)\n' +
+    '    at MessageStream.Writable.write (internal/streams/writable.js:303:10)\n' +
+    '    at TLSSocket.ondata (internal/streams/readable.js:731:22)',
+  timestamp: '2021-10-05 08:17:25'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-05 08:19:03'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-05 08:19:44'
+}
+{
+  message: '[user]: registering the user',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-05 08:19:46'
+}
+{
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'ja@ga.com' },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'E11000 duplicate key error collection: myFirstDatabase.users index: email_1 dup key: { email: "ja@ga.com" }',
+  stack: 'MongoServerError: E11000 duplicate key error collection: myFirstDatabase.users index: email_1 dup key: { email: "ja@ga.com" }\n' +
+    '    at D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\insert.js:51:33\n' +
+    '    at D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection_pool.js:272:25\n' +
+    '    at handleOperationResult (D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\sdam\\server.js:363:9)\n' +
+    '    at MessageStream.messageHandler (D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection.js:479:9)\n' +
+    '    at MessageStream.emit (events.js:400:28)\n' +
+    '    at processIncomingData (D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:108:16)\n' +
+    '    at MessageStream._write (D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:28:9)\n' +
+    '    at writeOrBuffer (internal/streams/writable.js:358:12)\n' +
+    '    at MessageStream.Writable.write (internal/streams/writable.js:303:10)\n' +
+    '    at TLSSocket.ondata (internal/streams/readable.js:731:22)',
+  timestamp: '2021-10-05 08:19:46'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-05 08:20:14'
+}
+{
+  message: '[user]: registering the user',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-05 08:20:15'
+}
+{
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'ja@ga.com' },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'E11000 duplicate key error collection: myFirstDatabase.users index: email_1 dup key: { email: "ja@ga.com" }',
+  stack: 'MongoServerError: E11000 duplicate key error collection: myFirstDatabase.users index: email_1 dup key: { email: "ja@ga.com" }\n' +
+    '    at D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\insert.js:51:33\n' +
+    '    at D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection_pool.js:272:25\n' +
+    '    at handleOperationResult (D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\sdam\\server.js:363:9)\n' +
+    '    at MessageStream.messageHandler (D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\connection.js:479:9)\n' +
+    '    at MessageStream.emit (events.js:400:28)\n' +
+    '    at processIncomingData (D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:108:16)\n' +
+    '    at MessageStream._write (D:\\node+react\\contacts\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:28:9)\n' +
+    '    at writeOrBuffer (internal/streams/writable.js:358:12)\n' +
+    '    at MessageStream.Writable.write (internal/streams/writable.js:303:10)\n' +
+    '    at TLSSocket.ondata (internal/streams/readable.js:731:22)',
+  timestamp: '2021-10-05 08:20:15'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-05 08:34:09'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-05 08:34:31'
 }
