@@ -1,0 +1,10 @@
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-05 16:33:44'
+}
+{
+  message: '[user]: registering the user',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-05 16:33:47'
+}

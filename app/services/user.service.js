@@ -3,18 +3,18 @@
 // top lvl folders : app/src, routes, config, {bootstrap}, app/server.js
 
 // validation
-// exception, validators, controllers, service, repository, 
+// exception, validators, controllers, service, repository,
 
 // 3 lvl validation : front end client side (browser), backend , db(khud krlega) -> expensive hoga
 
 // controller mei data -> validator, service mei internally error catch (.then . catch)
-// 
+//
 
 /** load required packages */
-const bcrypt = require('bcryptjs');
+const bcrypt = require("bcryptjs");
 
 /** load peer modules and services */
-const User = require('../models/user.schema');
+const User = require("../models/user.schema");
 
 /**
  * UserService is consumed not only by UserController, but also by controllers of other modules.
@@ -43,17 +43,14 @@ class UserService {
    * @returns the created User in the system
    */
   static async registerUser(body) {
-    
-    // const salt = await bcrypt.genSalt(10);
-
-    // var password = await bcrypt.hash(body.password,salt);
-
     const user = new User({
       name: body.name,
       email: body.email,
-      password: body.password
+      password: body.password,
     });
 
+    const salt = await bcrypt.genSalt(10);
+    user.password = await bcrypt.hash(user.password, salt);
     const newUser = await user.save();
     return newUser;
   }
