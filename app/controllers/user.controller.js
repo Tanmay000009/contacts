@@ -4,7 +4,7 @@ const { json } = require("express");
 /** load peer modules and services */
 const { logger } = require("../services/logger");
 const { UserService } = require("../services/user.service");
-c
+const apiResponse = require("../helpers/apiResponse");
 
 module.exports.getAllUsers = async () => {
   try {
@@ -14,9 +14,7 @@ module.exports.getAllUsers = async () => {
     return userList;
   } catch (e) {
     logger.error("Error: " + e);
-    return json({
-      error: e,
-    });
+    apiResponse.ErrorResponse(res, e);
   }
 };
 
@@ -28,9 +26,7 @@ module.exports.getOneUser = async () => {
     return user;
   } catch (e) {
     logger.error("Error: " + e);
-    return json({
-      error: e,
-    });
+    apiResponse.ErrorResponse(res, e);
   }
 };
 
@@ -41,24 +37,19 @@ module.exports.register = async () => {
     return user;
   } catch (e) {
     logger.error("Error: " + e);
-    return json({
-      error: e,
-    });
+    apiResponse.ErrorResponse(res, e);
   }
 };
 
 module.exports.update = async () => {
-  logger.info("[user]: updating the user");
-  await UserService.updateUser(id, objectid)
-    .then((user) => {
-      return user;
-    })
-    .catch((e) => {
-      logger.error("Error: " + e);
-      return json({
-        error: e,
-      });
-    });
+  try {
+    logger.info("[user]: updating the user");
+    const user = await UserService.updateUser(id, objectid);
+    return user;
+  } catch (e) {
+    logger.error("Error: " + e);
+    apiResponse.ErrorResponse(res, e);
+  }
 };
 
 module.exports.delete = async () => {
@@ -67,8 +58,6 @@ module.exports.delete = async () => {
     return await UserService.deleteUser(id);
   } catch (e) {
     logger.error("Error: " + e);
-    return json({
-      error: e,
-    });
+    apiResponse.ErrorResponse(res, e);
   }
 };
