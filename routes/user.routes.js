@@ -12,14 +12,28 @@ const {
 
 /** to list all users */
 router.get("/", async (req, res) => {
-  const userList = await UserController.getAllUsers();
-  return res.json(userList);
+  await UserController.getAllUsers()
+  .then( userList => {
+    return res.json(userList);
+  })
+  .catch( e => {
+    return res.status(400).json({
+      errors: e
+    });
+  })
 });
 
 /** to list specific user */
 router.get("/:id", async (req, res) => {
-  const user = await UserController.getOneUser(req.params.id);
-  return res.json(user);
+  await UserController.getOneUser(req.params.id)
+  .then( user => {
+    return res.json(user);
+  })
+  .catch( e => {
+    return res.status(400).json({
+      errors: e
+    });
+  })
 });
 
 /** to register a user */
@@ -38,14 +52,28 @@ router.post("/", userValidationRules(), validate, async (req, res) => {
 
 /** to update a user */
 router.put("/", async (req, res) => {
-  const user = await UserController.register(req.body);
-  return res.json(user);
+  await UserController.register(req.body)
+  .then( user => {
+    return res.json(user);
+  })
+  .catch( e => {
+    return res.status(400).json({
+      errors: e
+    });
+  })
 });
 
 /** to delete a user */
 router.delete("/:id", async (req, res) => {
-  const user = await UserController.delete(req.params.id);
-  return res.json(user);
+  await UserController.delete(req.params.id)
+  .then( user => {
+    return res.json(user);
+  })
+  .catch( e => {
+    return res.status(400).json({
+      errors: e
+    });
+  })
 });
 
 /** export the routes to be binded to application */

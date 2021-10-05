@@ -133,3 +133,38 @@
   level: '\x1B[32minfo\x1B[39m',
   timestamp: '2021-10-05 08:34:31'
 }
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-05 08:37:57'
+}
+{
+  message: '[user]: registering the user',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-05 08:37:59'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-05 08:40:12'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-05 08:40:52'
+}
+{
+  message: '[user]: listing all users',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-05 08:41:06'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-05 08:42:09'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-05 08:43:04'
+}

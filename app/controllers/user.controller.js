@@ -30,7 +30,10 @@ const {
   
         return userList;
       } catch (e) {
-        throw new Error();
+        return json({
+          status: 400,
+          error: e
+        })
       }
     }
   
@@ -41,7 +44,10 @@ const {
   
         return user;
       } catch (e) {
-        throw new InternalServerException();
+        return json({
+          status: 400,
+          error: e
+        })
       }
     }
   
@@ -62,7 +68,11 @@ const {
       logger.info('[user]: updating the user');
       await UserService.updateUser(id, objectid)
       .then(user => {return user;})
-      .catch(e => {});
+      .catch(e => {
+        return json({
+          status: 400,
+          error: e
+        })});
     }
   
     static async delete(id) {
@@ -70,7 +80,10 @@ const {
         logger.info('[user]: deleting the user');
         return await UserService.deleteUser(id);
       } catch (e) {
-        throw new InternalServerException();
+        return json({
+          status: 400,
+          error: e
+        })
       }
     }
   }
