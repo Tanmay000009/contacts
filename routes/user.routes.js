@@ -18,7 +18,7 @@ router.get("/:id", UserController.getOneUser);
 router.post("/",userValidationRules(),validate ,UserController.register);
 
 /** to update a user */
-router.put("/",userValidationRules(),validate, UserController.update);
+router.put("/:id",userValidationRules(),validate, UserController.update);
 
 /** to delete a user */
 router.delete("/:id", UserController.delete);
