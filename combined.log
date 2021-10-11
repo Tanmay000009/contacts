@@ -1,0 +1,155 @@
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:41:42'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:41:56'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:41:59'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:42:42'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:42:45'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:43:20'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:43:40'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:44:03'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:45:17'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:45:20'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:46:47'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:48:08'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:48:39'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:49:14'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:49:20'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:49:32'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:49:43'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:49:52'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:50:46'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:52:14'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:57:57'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:59:07'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:59:14'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:59:18'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 01:59:31'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 02:00:06'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 02:00:49'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 02:01:08'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 02:02:23'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 02:02:30'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-12 02:03:09'
+}
