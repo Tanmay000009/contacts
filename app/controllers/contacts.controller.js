@@ -54,7 +54,7 @@ module.exports.register = async (req, res) => {
 module.exports.update = async (req, res) => {
   try {
     logger.info("[Contact]: updating the Contact");
-    const contact = await ContactService.updateContact(req.params.id, req.body);
+    const contact = await ContactService.updateContact(req.params.id, req.body,req.user.id);
     return apiResponse.successResponseWithData(
       res,
       "Operation success",
