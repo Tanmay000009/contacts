@@ -55,11 +55,7 @@ class UserService {
         expiresIn: 360000,
       },
       (err, Token) => {
-        if (err) {
-          return {
-            error: "Internal server error",
-          };
-        }
+        throw new Error("Internal server Error");
         return Token;
       }
     );
