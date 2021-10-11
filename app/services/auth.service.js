@@ -1,7 +1,7 @@
 /** load required packages */
 const bcrypt = require("bcryptjs");
-const jwt = require('jsonwebtoken');
-const config = require('config');
+const jwt = require("jsonwebtoken");
+const config = require("config");
 
 /** load peer modules and services */
 const User = require("../models/user.schema");
@@ -9,7 +9,7 @@ const User = require("../models/user.schema");
 /**
  * UserService is consumed not only by UserController, but also by controllers of other modules.
  */
-class UserService {
+class AuthService {
   /**
    * Fetch all user details
    * @returns Array<User> list of users in the system
@@ -33,15 +33,20 @@ class UserService {
    * @returns the created User in the system
    */
   static async registerUser(body) {
-    const user = new User({
-      name: body.name,
-      email: body.email,
-      password: body.password,
-    });
+    const { email, password } = body;
 
-    const salt = await bcrypt.genSalt(10);
-    user.password = await bcrypt.hash(user.password, salt);
-    const newUser = await user.save();
+    let user = await User.findOne({ email });
+
+    if (!user) {
+      throw new Error("Invalid credentials!");
+    }
+    const isMatch = await bcrypt.compare(password, user.password);
+
+    if (!isMatch) {
+      const err = new Error("Invalid credentials!");
+      return err;
+    }
+
     const payload = {
       user: {
         id: user.id,
@@ -63,7 +68,6 @@ class UserService {
         return Token;
       }
     );
-    return newUser;
   }
 
   /**
@@ -86,4 +90,4 @@ class UserService {
   }
 }
 
-module.exports = { UserService };
+module.exports = { AuthService };
