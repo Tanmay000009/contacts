@@ -8,7 +8,7 @@ const ContactsController = require("../app/controllers/contacts.controller");
 router.get("/", ContactsController.getAllContacts);
 
 /** to list specific Contacts */
-router.get("/:id", ContactsController.getOneContacts);
+router.get("/:id", ContactsController.getOneContact);
 
 /** to register a Contacts */
 router.post("/" ,ContactsController.register);
