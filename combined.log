@@ -1,0 +1,40 @@
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-11 17:56:39'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-11 17:57:01'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-11 17:57:04'
+}
+{
+  message: '[Contact]: updating the Contact',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-11 17:57:19'
+}
+{
+  message: 'Error: TypeError: contact.push is not a function',
+  level: '\x1B[31merror\x1B[39m',
+  timestamp: '2021-10-11 17:57:19'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-11 17:58:23'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-11 17:58:43'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-11 17:58:46'
+}

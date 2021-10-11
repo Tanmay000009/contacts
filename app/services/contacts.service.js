@@ -53,7 +53,7 @@ class ContactService {
     if (obj.phone) contactFields.phone = obj.phone;
     if (obj.type) contactFields.type = obj.type;
     console.log(contactFields);
-    var contact = await Contact.findById({ _id: ContactId });
+    const contact = await Contact.findById({ _id: ContactId });
 
     if (!contact) {
       throw new Error("Contact not found");
@@ -64,12 +64,12 @@ class ContactService {
       return new Error("Unauthorized access");
     }
 
-    contact = await Contact.findByIdAndUpdate(
+    const updatedContact = await Contact.findByIdAndUpdate(
       ContactId,
       { $set: contactFields },
       { new: true }
     );
-    return contact;
+    return updatedContact;
   }
 
   /**
