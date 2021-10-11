@@ -1,180 +1,25 @@
 {
   message: 'connection.mongodb.successful',
   level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 17:56:39'
+  timestamp: '2021-10-11 18:46:58'
+}
+{
+  message: '[Contact]: listing all Contacts',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-11 18:47:29'
 }
 {
   message: 'connection.mongodb.successful',
   level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 17:57:01'
+  timestamp: '2021-10-11 18:53:27'
 }
 {
   message: 'connection.mongodb.successful',
   level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 17:57:04'
-}
-{
-  message: '[Contact]: updating the Contact',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 17:57:19'
-}
-{
-  message: 'Error: TypeError: contact.push is not a function',
-  level: '\x1B[31merror\x1B[39m',
-  timestamp: '2021-10-11 17:57:19'
+  timestamp: '2021-10-11 18:55:47'
 }
 {
   message: 'connection.mongodb.successful',
   level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 17:58:23'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 17:58:43'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 17:58:46'
-}
-{
-  message: '[Contact]: updating the Contact',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:00:17'
-}
-{
-  message: '[Contact]: listing all Contacts',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:02:49'
-}
-{
-  message: '[Contact]: deleting the Contact',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:04:18'
-}
-{
-  message: '[Contact]: listing all Contacts',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:04:31'
-}
-{
-  message: '[Contact]: listing all Contacts',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:04:37'
-}
-{
-  message: '[Contact]: deleting the Contact',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:06:56'
-}
-{
-  message: '[Contact]: deleting the Contact',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:06:57'
-}
-{
-  message: '[Contact]: listing all Contacts',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:07:00'
-}
-{
-  message: '[Contact]: listing all Contacts',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:07:02'
-}
-{
-  message: '[Contact]: listing all Contacts',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:07:03'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:07:47'
-}
-{
-  message: '[Contact]: deleting the Contact',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:07:49'
-}
-{
-  message: '[Contact]: deleting the Contact',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:07:51'
-}
-{
-  message: '[Contact]: listing all Contacts',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:07:55'
-}
-{
-  message: '[Contact]: listing all Contacts',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:07:57'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:08:08'
-}
-{
-  message: '[Contact]: deleting the Contact',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:08:15'
-}
-{
-  message: '[Contact]: listing all Contacts',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:08:17'
-}
-{
-  message: '[Contact]: deleting the Contact',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:08:20'
-}
-{
-  message: '[Contact]: deleting the Contact',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:08:21'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:09:48'
-}
-{
-  message: '[Contact]: deleting the Contact',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:09:51'
-}
-{
-  message: '[Contact]: listing all Contacts',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:09:53'
-}
-{
-  message: '[Contact]: deleting the Contact',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:09:57'
-}
-{
-  message: 'connection.mongodb.successful',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:10:11'
-}
-{
-  message: '[Contact]: deleting the Contact',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:10:16'
-}
-{
-  message: '[Contact]: deleting the Contact',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:10:28'
-}
-{
-  message: '[Contact]: listing all Contacts',
-  level: '\x1B[32minfo\x1B[39m',
-  timestamp: '2021-10-11 18:10:30'
+  timestamp: '2021-10-11 18:56:36'
 }

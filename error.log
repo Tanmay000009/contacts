@@ -1,5 +1,0 @@
-{
-  message: 'Error: TypeError: contact.push is not a function',
-  level: '\x1B[31merror\x1B[39m',
-  timestamp: '2021-10-11 17:57:19'
-}
