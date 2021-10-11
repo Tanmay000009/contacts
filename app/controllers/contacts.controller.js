@@ -69,6 +69,7 @@ module.exports.update = async (req, res) => {
 module.exports.delete = async (req, res) => {
   try {
     logger.info("[Contact]: deleting the Contact");
+    const contact = await ContactService.deleteContact(req.params.id);
     return apiResponse.successResponse(res, "Contact delete Success.");
   } catch (e) {
     logger.error("Error: " + e);
