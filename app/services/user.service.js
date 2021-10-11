@@ -5,6 +5,7 @@ const config = require('config');
 
 /** load peer modules and services */
 const User = require("../models/user.schema");
+const { response } = require("express");
 
 /**
  * UserService is consumed not only by UserController, but also by controllers of other modules.
@@ -48,18 +49,13 @@ class UserService {
       },
     };
 
-    jwt.sign(
+    return await jwt.sign(
       payload,
       config.get("jwtSecret"),
       {
         expiresIn: 360000,
-      },
-      (err, Token) => {
-        throw new Error("Internal server Error");
-        return Token;
       }
     );
-    return newUser;
   }
 
   /**
