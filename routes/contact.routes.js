@@ -4,6 +4,10 @@ const auth = require('../app/middleware/auth');
 
 /** load the service */
 const ContactsController = require("../app/controllers/contacts.controller");
+const {
+    contactValidationRules,
+    validate,
+  } = require("../app/validators/contact.validator");
 
 /** to list all Contacts */
 router.get("/",auth ,ContactsController.getAllContacts);
@@ -12,10 +16,10 @@ router.get("/",auth ,ContactsController.getAllContacts);
 router.get("/:id", auth, ContactsController.getOneContact);
 
 /** to register a Contacts */
-router.post("/" , auth,ContactsController.register);
+router.post("/" , auth,contactValidationRules(),validate,ContactsController.register);
 
 /** to update a Contacts */
-router.put("/", auth,ContactsController.update);
+router.put("/", auth,contactValidationRules(),validate ,ContactsController.update);
 
 /** to delete a Contacts */
 router.delete("/:id", auth, ContactsController.delete);
