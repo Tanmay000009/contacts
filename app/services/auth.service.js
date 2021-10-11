@@ -8,14 +8,22 @@ const User = require("../models/user.schema");
 
 class AuthService {
   /**
-   * Authenticate a new user
+   * Get a current user
+   * @returns the current User in the system
+   */
+  static async currentUser(id) {
+    const user = await User.findById(id).select("-password");
+    return user;
+  }
+
+  /**
+   * Authenticate a  user
    * @returns the created User in the system
    */
   static async authenticate(body) {
     const { email, password } = body;
 
     let user = await User.findOne({ email });
-
     if (!user) {
       throw new Error("Invalid credentials!");
     }
@@ -32,19 +40,11 @@ class AuthService {
       },
     };
 
-    jwt.sign(
+    return await jwt.sign(
       payload,
       config.get("jwtSecret"),
       {
         expiresIn: 360000,
-      },
-      (err, Token) => {
-        if (err) {
-          return {
-            error: "Internal server error",
-          };
-        }
-        return Token;
       }
     );
   }

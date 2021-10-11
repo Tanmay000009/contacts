@@ -12,6 +12,12 @@ const {
   validate,
 } = require("../app/validators/user.validator");
 
+/** load the middlewares */
+const auth = require("../app/middleware/auth");
+
+/** to get loggged in user */
+router.get("/",auth,AuthController.currentUser);
+
 /** to authenticate a user */
 router.post("/", userValidationRules(), validate, AuthController.authenticate);
 

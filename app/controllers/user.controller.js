@@ -35,7 +35,7 @@ module.exports.register = async (req,res) => {
     return apiResponse.successResponseWithData(res, "Operation success", user);
   } catch (e) {
     logger.error("Error: " + e);
-    apiResponse.ErrorResponse(res, e);
+    apiResponse.ErrorResponse(res, e.message);
   }
 };
 
