@@ -76,8 +76,8 @@ class ContactService {
    * Deletes the Contact
    */
   static async deleteContact(id) {
-    const Contact = await Contact.findByIdAndDelete(id);
-    return Contact;
+    const contact = await Contact.findByIdAndDelete(id);
+    return contact;
   }
 }
 
