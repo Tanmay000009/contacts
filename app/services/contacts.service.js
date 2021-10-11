@@ -29,13 +29,13 @@ class ContactService {
    * Create/Register a new Contact
    * @returns the created Contact in the system
    */
-  static async registerContact(body,id) {
+  static async registerContact(body, id) {
     const contact = new Contact({
       name: body.name,
       email: body.email,
       phone: body.phone,
       type: body.type,
-      user: id
+      user: id,
     });
 
     const newContact = await contact.save();
@@ -46,11 +46,30 @@ class ContactService {
    * Updates the Contact details
    *@returns the updated Contact
    */
-  static async updateContact(ContactId, objId) {
-    const Contact = await Contact.findById({ id: ContactId });
-    Contact.push(objId);
-    const updatedContact = await Contact.save();
-    return updatedContact;
+  static async updateContact(ContactId, obj, userId) {
+    const contactFields = {};
+    if (obj.name) contactFields.name = obj.name;
+    if (obj.email) contactFields.email = obj.email;
+    if (obj.phone) contactFields.phone = obj.phone;
+    if (obj.type) contactFields.type = obj.type;
+    console.log(contactFields);
+    var contact = await Contact.findById({ _id: ContactId });
+
+    if (!contact) {
+      throw new Error("Contact not found");
+    }
+
+    // Make sure user owns contact
+    if (contact.user.toString() !== userId) {
+      return new Error("Unauthorized access");
+    }
+
+    contact = await Contact.findByIdAndUpdate(
+      ContactId,
+      { $set: contactFields },
+      { new: true }
+    );
+    return contact;
   }
 
   /**
