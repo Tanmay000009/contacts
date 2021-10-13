@@ -158,3 +158,18 @@
   level: '\x1B[32minfo\x1B[39m',
   timestamp: '2021-10-13 17:18:54'
 }
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-13 17:20:14'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-13 17:21:33'
+}
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-13 17:21:48'
+}
