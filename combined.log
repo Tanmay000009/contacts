@@ -153,3 +153,8 @@
   level: '\x1B[32minfo\x1B[39m',
   timestamp: '2021-10-12 02:03:09'
 }
+{
+  message: 'connection.mongodb.successful',
+  level: '\x1B[32minfo\x1B[39m',
+  timestamp: '2021-10-13 17:18:54'
+}
